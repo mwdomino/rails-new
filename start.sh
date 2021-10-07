@@ -1,2 +1,2 @@
 #!/bin/bash
-touch /tmp/didit
+echo "Running the thing"
