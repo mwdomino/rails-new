@@ -1,7 +1,7 @@
 #!/bin/bash
 cd local/app
 export HOME=$PWD
-
+echo "The cow says: $(whoami)"
 chown -R $(whoami) /local/app
 /usr/bin/gem install --user-install bundler 2>&1
 
