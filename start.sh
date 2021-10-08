@@ -1,6 +1,6 @@
 #!/bin/bash
 cd local/app
-export HOME=local/app
+export HOME=$PWD
 
 /usr/bin/gem install --user-install bundler 2>&1
 
