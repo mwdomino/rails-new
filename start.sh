@@ -3,7 +3,7 @@ cd local/app
 export HOME=$PWD
 
 /usr/bin/gem install --user-install bundler 2>&1
-
+chown -R $(whoami) $HOME/.gem
 echo "--------------"
 export PATH=$PATH:$HOME/.gem/ruby/2.5.0/bin/
 echo "PATH: $PATH"
