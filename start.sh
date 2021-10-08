@@ -2,7 +2,7 @@
 cd local/app
 export HOME=$PWD
 
-chown -R $(whoami) $HOME
+chown -R $(whoami) /local/app
 /usr/bin/gem install --user-install bundler 2>&1
 
 echo "--------------"
