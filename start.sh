@@ -1,8 +1,8 @@
 #!/bin/bash
 cd local/app
 export HOME=$PWD
-echo "The cow says: $(whoami)"
-chown -R $(whoami) /local/app
+echo "The cow says: $(whoami):$(groups)"
+chown -R $(whoami) $HOME
 /usr/bin/gem install --user-install bundler 2>&1
 
 echo "--------------"
