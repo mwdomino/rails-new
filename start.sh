@@ -9,8 +9,9 @@ export BUNDLE_BIN=$HOME/bin
 export BUNDLE_DEPLOYMENT=true
 export BUNDLE_PATH=$HOME/vendor/bundle
 
-# chown -R nobody:nogroup $HOME
-# gem install --user-install bundler 2>&1
+sleep 9000
+chown -R nobody:nogroup $HOME
+gem install --user-install bundler 2>&1
 
 /usr/local/bin/bundle install 2>&1
 
