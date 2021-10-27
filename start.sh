@@ -1,4 +1,5 @@
 #!/bin/bash
+cd local/app
 export TERM=xterm # ctrl+l is very important to me
 # export HOME=$PWD
 export PATH=$HOME/.gem/ruby/2.5.0/bin:$HOME/vendor/bundle/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -7,6 +8,8 @@ export PATH=$HOME/.gem/ruby/2.5.0/bin:$HOME/vendor/bundle/bin:$HOME/bin:/usr/loc
 export BUNDLE_BIN=/local/app/bin
 export BUNDLE_DEPLOYMENT=true
 export BUNDLE_PATH=/local/app/vendor/bundle
+
+sleep 9000
 
 gem install --user-install bundler 2>&1
 bundle install 2>&1
