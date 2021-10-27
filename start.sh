@@ -8,6 +8,7 @@ export PATH=$HOME/.gem/ruby/2.5.0/bin:$HOME/vendor/bundle/bin:$HOME/bin:/usr/loc
 export BUNDLE_BIN=$HOME/bin
 export BUNDLE_DEPLOYMENT=true
 export BUNDLE_PATH=$HOME/vendor/bundle
+export RAILS_ENV=production
 
 gem install --user-install bundler 2>&1
 
