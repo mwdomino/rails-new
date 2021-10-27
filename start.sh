@@ -9,7 +9,10 @@ export BUNDLE_BIN=$HOME/bin
 export BUNDLE_DEPLOYMENT=true
 export BUNDLE_PATH=$HOME/vendor/bundle
 
-gem install --user-install bundler
-bundle install
-bundle exec rails webpacker:install
-bundle exec rails s
+gem install --user-install bundler 2>&1
+
+bundle install 2>&1
+
+bundle exec rails webpacker:install 2>&1
+
+bundle exec rails s 2>&1
