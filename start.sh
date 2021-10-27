@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 9000
 cd alloc/data 
 export TERM=xterm # ctrl+l is very important to me
 export HOME=$PWD
