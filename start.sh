@@ -14,6 +14,8 @@ gem install --user-install bundler 2>&1
 
 bundle install --without development test 2>&1
 
+bundle exec rails app:update:bin
+
 bundle exec rails webpacker:install 2>&1
 
 bundle exec rails s 2>&1
