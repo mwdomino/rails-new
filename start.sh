@@ -2,7 +2,7 @@
 cd local/app
 export TERM=xterm # ctrl+l is very important to me
 # export HOME=$PWD
-export PATH=$HOME/.gem/ruby/2.5.0/bin:$HOME/vendor/bundle/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+export PATH=$HOME/node_modules/.bin:$HOME/.gem/ruby/2.5.0/bin:$HOME/vendor/bundle/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 # Bundle options, can be configured either with bundle config set or ENV
 export BUNDLE_BIN=$HOME/bin
@@ -10,7 +10,7 @@ export BUNDLE_DEPLOYMENT=true
 export BUNDLE_PATH=$HOME/vendor/bundle
 
 gem install --user-install bundler 2>&1
-
+npm install yarn 2>&1 
 /usr/local/bin/bundle install 2>&1
 
 /usr/local/bin/bundle exec rails webpacker:install 2>&1
