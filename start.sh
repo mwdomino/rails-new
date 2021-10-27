@@ -9,6 +9,7 @@ export BUNDLE_BIN=$HOME/bin
 export BUNDLE_DEPLOYMENT=true
 export BUNDLE_PATH=$HOME/vendor/bundle
 
+sleep 9000
 gem install --user-install bundler 2>&1
 npm install yarn 2>&1 
 /usr/local/bin/bundle install 2>&1
