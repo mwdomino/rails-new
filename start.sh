@@ -9,7 +9,6 @@ export BUNDLE_BIN=$HOME/bin
 export BUNDLE_DEPLOYMENT=true
 export BUNDLE_PATH=$HOME/vendor/bundle
 
-sleep 9000
 gem install --user-install bundler
 bundle install
 bundle exec rails webpacker:install
