@@ -1,5 +1,5 @@
 #!/bin/bash
-cd local/ 
+cd /local
 export TERM=xterm # ctrl+l is very important to me
 export HOME=$PWD
 export PATH=$HOME/.gem/ruby/2.5.0/bin:$HOME/vendor/bundle/bin:$HOME/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
