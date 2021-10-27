@@ -9,8 +9,8 @@ export BUNDLE_DEPLOYMENT=true
 export BUNDLE_PATH=/local/app/vendor/bundle
 
 gem install --user-install bundler 2>&1
-/usr/local/bin/bundle install 2>&1
+bundle install 2>&1
 
-/usr/local/bin/bundle exec rails webpacker:install 2>&1
+bundle exec rails webpacker:install 2>&1
 
-/usr/local/bin/bundle exec rails s 2>&1
+bundle exec rails s 2>&1
